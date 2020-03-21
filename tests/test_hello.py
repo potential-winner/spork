@@ -6,4 +6,4 @@ def test_hello_to_aziz():
 
 def test_hello_world_and_to_aziz():
     result = hello_world_and_to("aziz")
-    assert result == "Hello, aziz"
+    assert result == "Hello, World and aziz"
