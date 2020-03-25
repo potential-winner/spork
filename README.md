@@ -13,7 +13,7 @@ pip install virtualenv
 Move into project directory then initialize virtual environment to install there project required packages:
 
 ```
-cd /spork's/project/directory
+cd /spork/project/directory
 virtualenv venv
 .\venv\Scripts\activate
 ```
