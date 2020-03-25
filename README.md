@@ -4,16 +4,16 @@ This project is created to implement Telegram-bot for managing GitHub projects
 
 ## How to use
 
-Firstly you should enter spork's project directory and install virtualenv:
+Firstly you should install virtualenv:
 
 ```
-cd /spork's/project/directory
 pip install virtualenv
 ```
 
-Then initialize virtual environment to install there project required packages:
+Move into project directory then initialize virtual environment to install there project required packages:
 
 ```
+cd /spork's/project/directory
 virtualenv venv
 .\venv\Scripts\activate
 ```
