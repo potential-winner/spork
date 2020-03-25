@@ -7,7 +7,7 @@ This project is created to implement Telegram-bot for managing GitHub projects
 Firstly install virtualenv:
 
 ```
-pip3 install virtualenv
+pip install virtualenv
 ```
 
 Then initialize virtual environment to install there project required packages:
