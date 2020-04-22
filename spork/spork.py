@@ -1,5 +1,5 @@
 from telegram import Bot
-from telegram.ext import Updater
+from telegram.ext import Updater, CommandHandler
 
 class Spork(object):
     def __init__(self, access_token: str, proxy: str):
@@ -15,3 +15,6 @@ class Spork(object):
 
     def updater(self) -> Updater:
         return self._updater
+
+    def addCommand(self, command: CommandHandler):
+        self._updater.dispatcher.add_handler(command)
