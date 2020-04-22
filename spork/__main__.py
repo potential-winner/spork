@@ -1,13 +1,9 @@
-from spork.hello import hello_to
 from telegram import Bot
 from telegram.ext import Updater, CommandHandler
 import sys
+from spork.commands.hello import HelloCommand
 
 PROXY = 'https://telegg.ru/orig/bot'
-
-def hello(update, context):
-    hello_message = hello_to(update.message.from_user.first_name)
-    update.message.reply_text(hello_message)
 
 
 def main(access_token: str):
@@ -16,7 +12,7 @@ def main(access_token: str):
         base_url=PROXY,  # delete it if connection via VPN
     )
     updater = Updater(bot=bot, use_context=True)
-    updater.dispatcher.add_handler(CommandHandler('hello', hello))
+    updater.dispatcher.add_handler(HelloCommand)
     updater.start_polling()
     updater.idle()
 

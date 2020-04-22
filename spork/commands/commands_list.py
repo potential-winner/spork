@@ -1,0 +1,2 @@
+class CommandsList(object):
+    pass
